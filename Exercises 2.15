@@ -1,0 +1,53 @@
+#Ex 2
+write a program the uses input to prompt a user for their name and then welcome them.
+
+name = input('Enter your name')
+Enter your name>? chuck
+print('hello', name + '!')
+hello chuck!
+
+#EX 3
+write a program to prompt the user for Hours and Rate per hour to compute gross pay
+Enter Hours: 35
+Enter Rate: 2.75
+pay: 96.25
+
+hours = float(input('enter hours'))
+enter hours>? 35
+rate = float(input('enter rate: '))
+enter rate: >? 2.75
+pay = hours * rate
+print('pay', pay)
+pay 96.25
+
+#EX 4
+assume that we execute the following assignment statements:
+width = 17
+height = 12.0
+for each of the following epressions, write the value of the expression and the type
+use the python interpreter to check your answer.
+
+print('width//2')
+width//2
+width/2.0
+8.5
+width//2
+8
+height/3
+4.0
+1 + 2 * 5
+11
+
+
+#EX 5
+wirte a program which prompts the user for a celsius temperature, convert the temperature to fahrenheit, and print out the converted temperature.
+
+# Prompt the user for celsius temperature 
+celsius = float(input('enter a temperature in celsius: '))
+enter a temperature in celsius: >? 90
+# convert celsius to fahrenheit 
+fahrenheit = (celsius * 9/5) + 32
+# print the converted temperature
+print('the temperature in fahrenheit is:', fahrenheit)
+the temperature in fahrenheit is: 194.0
+
