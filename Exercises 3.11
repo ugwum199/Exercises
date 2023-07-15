@@ -1,0 +1,69 @@
+EX 1
+
+Write your pay computation to give the employee 1.5 times the hourly rate for hours worked above 40 hours. 
+Enter hours: 45 
+Enter rate: 10 
+Pay: 475.0
+
+hours = int(input("Enter hours: "))
+Enter hours: >? 45
+rate = float(input("Enter rate: "))
+Enter rate: >? 10
+if hours <= 40:
+    pay = hours * rate
+else:
+    overtime_hours = hours - 40
+    overtime_rate = rate * 1.5
+    regular_pay = 40 * rate
+    overtime_pay = overtime_hours * overtime_rate
+    pay = regular_pay + overtime_pay
+print("Pay:", pay)
+Pay: 475.0
+
+EX 2
+while True:
+    score = input('enter score: ')
+
+    try:
+        score = float(score)
+
+        if score < 0.0 or score > 1.0:
+            print('bad score')
+        elif score >= 0.9:
+            print('A')
+        elif score >= 0.8:
+            print('B')
+        elif score >= 0.7:
+            print('C')
+        elif score >= 0.6:
+            print('D')
+        else:
+            print('F')
+    except ValueError:
+        print("Bad score")
+#output
+
+enter score: 0.0
+F
+enter score: 0.0 and 1.0
+Bad score
+enter score: 0.9
+A
+enter score: 0.8
+B
+enter score: 0.7
+C
+enter score: 0.6
+D
+enter score: 0.5
+F
+enter score: 0.4
+F
+enter score: 0.3
+F
+enter score: 0.2
+F
+enter score: 0.1
+F
+enter score: 2
+bad score
