@@ -1,0 +1,32 @@
+EXERCISE 6
+
+Take the following Python code that stores a string:
+str = 'X-DSPAM-Confidence:0.8475'
+Use find and string slicing to extract the portion of the string after the
+colon character and then use the float function to convert the extracted
+string into a floating point number
+
+# Given string
+text = 'X-DSPAM-Confidence:0.8475'
+
+# To find the position of the colon character
+colon_pos = text.find(':')
+
+# Extract the portion of the string after the colon
+extracted_str = text[colon_pos + 1:]
+
+# Convert the extracted string to a floating-point number
+conf_value = float(extracted_str)
+
+# Print the result
+print(conf_value)
+
+out put
+
+0.8475
+
+Process finished with exit code 0
+
+
+
+
